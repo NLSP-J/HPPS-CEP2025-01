@@ -27,7 +27,7 @@ start_time = 0
 
 obj_size = 80
 obj_data = []
-obj_image = pg.image.load('C:/MyFiles/pyproj/pygame_env/HPPS/button.png')
+obj_image = pg.image.load('./assets/images/button.png')
 obj_image = pg.transform.scale(obj_image,(obj_size, obj_size))
 
 
