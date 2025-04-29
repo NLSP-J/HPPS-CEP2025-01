@@ -1,5 +1,7 @@
 import pygame as pg
 import random, time
+import asyncio
+
 pg.init()
 clock = pg.time.Clock()
 
@@ -62,7 +64,7 @@ def checkclick():
             obj_data.remove(obj)
             score += 1
 
-def main():
+async def main():
 
     running = True
 
@@ -84,5 +86,6 @@ def main():
         
         clock.tick(30)
         pg.display.update()
+        await asyncio.sleep(0)
 
-main()
+asyncio.run(main())
